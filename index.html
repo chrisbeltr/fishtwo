@@ -35,22 +35,22 @@
             })
         </script>
         <div class="origin">
+            <script>
+                var origin = document.getElementsByClassName("origin")[0];
+                for (var i = 1; i < 11; i++) {
+                    var r = (Math.random() * 500) + 200;
+                    origin.style.setProperty(`--${i}x`, `${r}px`);
+                    r = (Math.random() * 700) + 200;
+                    origin.style.setProperty(`--${i}y`, `${r}px`);
+                }
+            </script>
             <img src="./images/heart.png" alt="heart" class="small"><img src="./images/heart.png" alt="heart"
                 class="small"><img src="./images/heart.png" alt="heart" class="small"><img src="./images/heart.png"
                 alt="heart" class="small">
             <img src="./images/star.png" alt="star" class="small"><img src="./images/star.png" alt="star"
                 class="small"><img src="./images/star.png" alt="star" class="small"><img src="./images/star.png"
-                alt="star" class="small"><img src="./images/star.png" alt="star" class="small">
+                alt="star" class="small">
         </div>
-        <script>
-            var origin = document.getElementsByClassName("origin")[0];
-            for (var i = 1; i < 10; i++) {
-                var r = (Math.random() * 500) + 200;
-                origin.style.setProperty(`--${i}x`, `${r}px`);
-                r = (Math.random() * 700) + 200;
-                origin.style.setProperty(`--${i}y`, `${r}px`);
-            }
-        </script>
     </div>
 </body>
 
