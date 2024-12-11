@@ -9,7 +9,32 @@
 </head>
 
 <body>
+    <div class="center">
+        <div class="pixel-font title">fishtwo</div>
+        <div class="pixel-font subtitle"><a href="https://bsky.app/profile/fishtwo.art">bsky</a> <a
+                href="https://x.com/FlSHTWO">twitter</a> <a href="https://toyhou.se/fish2">toyhouse</a> <a
+                href="https://ko-fi.com/fish2">ko-fi</a></div>
+        <img draggable="false" class="main-img" src="./images/face.png" alt="fishtwo">
+        <script>
+            var title = document.getElementsByClassName("title")[0];
+            var subtitle = document.getElementsByClassName("subtitle")[0];
+            var main = document.getElementsByClassName("main-img")[0];
+            var size = Math.min(innerHeight * 0.5, innerWidth * 1.05);
+            main.height = size;
+            title.style.fontSize = `${innerHeight * 0.05}px`;
+            title.style.lineHeight = `${(innerHeight * 0.05) / 1.5}px`;
+            subtitle.style.fontSize = `${innerHeight * 0.02}px`;
+            subtitle.style.lineHeight = `${(innerHeight * 0.02) / 1}px`;
 
+            window.addEventListener("resize", () => {
+                main.height = Math.min(innerHeight * 0.5, innerWidth * 1.05);
+                title.style.fontSize = `${innerHeight * 0.05}px`;
+                title.style.lineHeight = `${(innerHeight * 0.05) / 1.5}px`;
+                subtitle.style.fontSize = `${innerHeight * 0.02}px`;
+                subtitle.style.lineHeight = `${(innerHeight * 0.02) / 1}px`;
+            })
+        </script>
+    </div>
 </body>
 
 </html>
