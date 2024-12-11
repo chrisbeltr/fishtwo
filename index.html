@@ -42,16 +42,16 @@
                 class="small"><img src="./images/star.png" alt="star" class="small"><img src="./images/star.png"
                 alt="star" class="small"><img src="./images/star.png" alt="star" class="small">
         </div>
+        <script>
+            var origin = document.getElementsByClassName("origin")[0];
+            for (var i = 1; i < 10; i++) {
+                var r = (Math.random() * 500) + 200;
+                origin.style.setProperty(`--${i}x`, `${r}px`);
+                r = (Math.random() * 700) + 200;
+                origin.style.setProperty(`--${i}y`, `${r}px`);
+            }
+        </script>
     </div>
-    <script>
-        var origin = document.getElementsByClassName("origin")[0];
-        for (var i = 0; i < 10; i++) {
-            var r = (Math.random() * 500) + 200;
-            origin.style.setProperty(`--${i}x`, `${r}px`);
-            r = (Math.random() * 700) + 200;
-            origin.style.setProperty(`--${i}y`, `${r}px`);
-        }
-    </script>
 </body>
 
 </html>
