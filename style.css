@@ -33,6 +33,10 @@ a:active {
   color: lightgray;
 }
 
+img {
+  image-rendering: pixelated;
+}
+
 .center {
   height: 100%;
   padding: 5px;
@@ -72,4 +76,70 @@ a:active {
   flex-wrap: wrap;
   row-gap: 0;
   justify-content: center;
+}
+
+.origin {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+}
+
+.small {
+  position: absolute;
+  z-index: -2;
+}
+
+.small:nth-child(1) {
+  bottom: 240px;
+  right: 310px;
+  transform: rotate(20deg) scale(0.9);
+}
+
+.small:nth-child(2) {
+  top: 300px;
+  left: 260px;
+  transform: rotate(-3deg);
+}
+
+.small:nth-child(3) {
+  bottom: 333px;
+  left: 367px;
+  transform: rotate(15deg) scale(1.2);
+}
+
+.small:nth-child(4) {
+  top: 200px;
+  left: 550px;
+  transform: rotate(50deg) scale(0.7);
+}
+
+.small:nth-child(5) {
+  top: 320px;
+  left: 320px;
+}
+
+.small:nth-child(6) {
+  bottom: 478px;
+  left: 522px;
+  transform: rotate(-17deg);
+}
+
+.small:nth-child(7) {
+  top: 409px;
+  right: 500px;
+  transform: scale(1.4);
+}
+
+.small:nth-child(8) {
+  top: 500px;
+  left: 827px;
+  transform: scale(0.9) rotate(80deg);
+}
+
+.small:nth-child(9) {
+  bottom: 586px;
+  right: 982px;
+  transform: rotate(27deg);
 }
