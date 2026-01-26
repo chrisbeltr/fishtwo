@@ -22,16 +22,21 @@ body {
   overflow: hidden;
 }
 
+s {
+  color: black;
+  text-decoration-thickness: 2px;
+}
+
 a {
   color: black;
   text-decoration: none;
 }
 
-a:hover {
+a:hover, s:hover {
   color: gray;
 }
 
-a:active {
+a:active, s:active {
   color: lightgray;
 }
 
